@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+        }
+
+        .profile-preview {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 3rem;
+            margin: 20px auto;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+
+        .instructions {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .step {
+            margin: 15px 0;
+            padding: 10px;
+            background: #e3f2fd;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+        }
+
+        .code {
+            background: #2d3748;
+            color: #e2e8f0;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+
+        .btn {
+            background: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>📸 Add Your Profile Image</h1>
+
+        <div class="profile-preview">
+            <i class="fas fa-user"></i>
+        </div>
+
+        <p>This is how your profile will look in your portfolio!</p>
+
+        <div class="instructions">
+            <h3>Quick Setup (2 minutes):</h3>
+
+            <div class="step">
+                <strong>Step 1:</strong> Save your profile photo in the same folder as your portfolio files
+            </div>
+
+            <div class="step">
+                <strong>Step 2:</strong> Rename your image file to exactly: <span class="highlight">profile.jpg</span>
+            </div>
+
+            <div class="step">
+                <strong>Step 3:</strong> Open your portfolio by double-clicking <code>index.html</code>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>Alternative Method:</h3>
+            <p>If you want to keep your original image name, update this line in your HTML:</p>
+            <div class="code">&lt;img src="profile.jpg" alt="Balamurugan - UI/UX Designer" /&gt;</div>
+            <p>Change <span class="highlight">profile.jpg</span> to your actual image filename</p>
+        </div>
+
+        <div class="instructions">
+            <h3>Image Requirements:</h3>
+            <ul>
+                <li>✅ High quality (400x400px or larger)</li>
+                <li>✅ Square shape works best</li>
+                <li>✅ File size under 1MB</li>
+                <li>✅ JPG, PNG, or WebP format</li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="btn">View Your Portfolio</a>
+        <a href="#" class="btn" onclick="window.open('index.html', '_blank')">Open in New Tab</a>
+
+        <p style="margin-top: 30px; color: #666; font-size: 14px;">
+            Once you add your image, your portfolio will look professional and complete! 🚀
+        </p>
+    </div>
+</body>
+
+</html>
